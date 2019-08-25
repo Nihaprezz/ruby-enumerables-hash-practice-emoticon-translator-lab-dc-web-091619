@@ -24,6 +24,10 @@ end
 
 def get_english_meaning(file_path, entered_emoticon)
   library = load_library(file_path)
-  library.each
   
+  if library["get_meaning"].include?(entered_emoticon)
+    library["get_meaning"][entered_emoticon]
+  else
+    return "nope"
+  end
 end
