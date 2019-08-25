@@ -24,5 +24,6 @@ end
 
 def get_english_meaning(file_path, entered_emoticon)
   library = load_library(file_path)
+  library.each
   
 end
